@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+#logo {
+    width: 80%;
+    vertical-align: bottom;
+}
+
+#left-ul {
+    float: left;
+    width: 50%;
+}
+
+#right-ul {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.header-ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: small;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #b4d0e7;
+    padding: 120px 60px 80px 60px;
+    max-height: 90vh;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.blue-button {
+    padding: 5px 20px;
+    background-color: #0061ff;
+    color: white;
+    font-weight: 600;
+    font-size: small;
+}
+
+.hero-text {
+    width: 30%;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.small-text {
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fa-arrow-down {
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+#jumbo-img {
+    width: 70%;
+    float: left;
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: 77px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4, h5 {
+    font-size: 16px;
+}
+
+
+/* Container Layout */
+.container-large {
+    max-width: 1367px;
+    width: 100%;
+    margin: auto;
+}
+
+.container {
+    max-width: 1010px;
+    width: 100%;
+    margin: auto;
+}
