@@ -16,6 +16,7 @@ body {
 
 header {
     position: fixed;
+    z-index: 999;
     padding: 20px;
     width: 100%;
     background-color: white;
@@ -257,7 +258,7 @@ label {
     bottom: 100px;
 }
 
-.white-button {
+.trasp-button {
     padding: 5px 10px;
     border: 1px solid black;
     color: rgb(0, 0, 0);
@@ -347,6 +348,7 @@ label {
 
 #large-bg {
     background-color: #b4d0e7;
+    padding: 100px 0px;
 }
 
 #designit-big {
@@ -358,3 +360,45 @@ label {
     border-bottom: 1px solid rgba(201, 201, 201, 0.747);
     padding-top: 30px;
 }
+
+.white-button {
+    background-color: white;
+    padding: 5px  50px;
+    font-weight: 600;
+    font-size: 15px;
+    float: right;
+}
+
+.lbg-title {
+    width: 50%;
+    color: rgba(97,8,43,255);
+    float: left;
+}
+
+/* Q&A */
+.pad-top {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.bord-qa {
+    border-bottom: 1px solid rgba(201, 201, 201, 0.747);
+}
+
+.qa {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.fa-angle-down {
+    float: right;
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+}
+
+/* FOOTER */
+
+
