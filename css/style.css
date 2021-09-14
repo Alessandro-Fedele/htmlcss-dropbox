@@ -268,3 +268,93 @@ label {
 .underline {
     text-decoration: underline;
 }
+
+/* Square Section */
+.squaresection-title {
+    width: 58%;
+}
+
+.square-section-big {
+    float: left;
+    width: 50%;
+    background-color: rgba(245,245,245,255);
+    padding: 50px;
+}
+
+.square-section-small {
+    float: left;
+    width: 25%;
+}
+
+[class*="square-section-"] {
+    height: 50vh;
+}
+
+.container-square-img {
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
+.floated-square-img {
+    float: left;
+}
+
+.square-img-fit {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#designit {
+    border: 10px solid rgba(208,233,205,255);
+    background-color: rgba(162,211,155,255);
+}
+
+#arizona {
+    background-color: rgba(97,8,43,255);
+}
+
+#florida {
+    background-color: rgba(0,147,206,255);
+}
+
+#toops {
+    background-color: rgba(255,28,28,255);
+}
+
+#wbr {
+    background-color: rgba(213,0,31,255);
+}
+
+#hearts {
+    background-color: rgba(180,208,231,255);
+}
+
+#lonely {
+    background-color: rgba(13,36,129,255);
+}
+
+#clear {
+    background-color: rgba(255,216,48,255);
+}
+
+.img-filter {
+    filter:  brightness(0) invert(1);
+}
+
+#large-bg {
+    background-color: #b4d0e7;
+}
+
+#designit-big {
+    width: 20%;
+}
+
+#line-designit {
+    width: 60px;
+    border-bottom: 1px solid rgba(201, 201, 201, 0.747);
+    padding-top: 30px;
+}
