@@ -155,6 +155,14 @@ h6 {
     width: calc(100% / 9 * 3 - 20px);
 }
 
+.col-4_9 {
+    width: calc(100% / 9 * 4);
+}
+
+.col-5_9 {
+    width: calc(100% / 9 * 5);
+}
+
 .check {
     display: inline-block;
     padding-right: 20px;
@@ -183,11 +191,20 @@ label {
 }
 
 .plane {
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 .pad-bot{
     padding-bottom: 20px;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.large-button {
+    padding-left: 58px;
+    padding-right: 58px;
 }
 
 #blue-link {
@@ -210,4 +227,23 @@ label {
 
 .fa-check {
     color: #0061ff;
+}
+
+.team-container {
+    width: 100%;
+    border: 1px solid rgba(201, 201, 201, 0.747);
+}
+
+.team-button {
+    float: right;
+    position: relative;
+    bottom: 100px;
+}
+
+.white-button {
+    padding: 5px 10px;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 15px;
 }
