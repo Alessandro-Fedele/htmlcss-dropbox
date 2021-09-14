@@ -401,4 +401,40 @@ label {
 
 /* FOOTER */
 
+#foot-bg {
+    width: 100%;
+    background-color: black;
+}
 
+.foot-container {
+    width: 90%;
+    padding: 80px 40px;
+    margin: auto;
+}
+
+.col-1_5 {
+    width: calc(100% / 5);
+    float: left;
+}
+
+.li-foot {
+    color: white;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.li-title {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.white-a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.foot-ul {
+    padding-left: 30px;
+}
