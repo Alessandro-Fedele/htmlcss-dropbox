@@ -45,15 +45,12 @@ header {
     font-weight: 600;
     padding-left: 10px;
     padding-right: 10px;
+    position: relative;
 }
 
 a {
     text-decoration: none;
     color: black;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 .hero {
@@ -73,6 +70,7 @@ p {
     color: white;
     font-weight: 600;
     font-size: small;
+    display: inline-block;
 }
 
 .hero-text {
@@ -335,9 +333,6 @@ li {
     width: 25%;
 }
 
-/* [class*="square-section-"] {
-    height: 10vw;
-} */
 /* ------------Single SQUARE---------- */
 .container-square-img {
     width: 50%;
@@ -421,8 +416,12 @@ li {
 }
 
 /* Q&A */
-.pad-top {
+.qa-pad {
     padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.pad-title-qa {
     padding-bottom: 40px;
 }
 
@@ -442,6 +441,29 @@ li {
     position: relative;
     bottom: 30px;
     right: 30px;
+    transform: rotateZ(0deg);
+    transition: transform .5s;
+}
+
+.qa-accordion {
+    margin-bottom: 20px;
+    /* display: none; */
+    height: 0px;
+    overflow: hidden;
+    transition: height .5s;
+}
+
+.bord-qa:focus .qa-accordion {
+    /* display: block; */
+    height: 200px;
+    overflow: auto;
+}
+
+.bord-qa:focus .fa-angle-down {
+    transform: rotateZ(180deg);
+    transition: transform .5s;
+    animation: none;
+    color: #0061ff;
 }
 
 /* FOOTER */
@@ -466,6 +488,7 @@ li {
     color: white;
     list-style: none;
     padding-bottom: 10px;
+    position: relative;
 }
 
 .li-title {
@@ -510,4 +533,97 @@ li {
 
 .fa-globe-americas {
     font-size: 16px;
+}
+
+/* -------------Animations------------ */
+/* arrow bounce */
+.bounce {
+    animation: bounce 2s infinite;
+}
+  
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+}
+
+/* navbar animation link */
+.nav-anim-li a {
+    position: relative;
+    padding: 16px 7px;
+    border-top: 2px solid rgba(255,255,255,0);
+    border-bottom: 2px solid rgba(255,255,255,0);
+    transition: padding .3s,border-color .3s;
+}
+
+.nav-anim-li  a:hover {
+    padding: 5px 7px;
+    border-color: #0061ff;
+    outline: none; 
+    background-color: rgba(200, 228, 228, 0.329);  
+}
+
+.nav-anim-li a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 0;
+    color: rgba(255,255,255,0);
+    border-left: 2px solid rgba(255,255,255,0);
+    content: attr(data-text);
+    transition: max-height .3s,border-color 0s;
+}
+
+.nav-anim-li a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    max-height: 0;
+    color: rgba(255,255,255,0);
+    border-right: 2px solid rgba(255,255,255,0);
+    content: attr(data-text);
+    transition: max-height .3s,border-color 0s;
+}
+
+.nav-anim-li  a:hover::before, 
+.nav-anim-li  a:hover::after {
+    max-height: 100%;
+    transition-delay: .28s;
+    border-color: #0061ff;
+}
+
+/* button animation */
+a[class*="button"]:hover {
+    background-color: rgba(32, 178, 171, 0.671);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    
+}
+
+/* footer link animation */
+.li-foot a::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background-color: rgba(201, 201, 201, 0.747);
+    transform-origin: bottom right;
+    transition: transform .4s ease-out;   
+} 
+
+.li-foot a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
