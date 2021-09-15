@@ -326,6 +326,8 @@ li {
     width: 50%;
     background-color: rgba(245,245,245,255);
     padding: 50px;
+    height: 25vw;
+    overflow: auto;
 }
 
 .square-section-small {
@@ -333,20 +335,17 @@ li {
     width: 25%;
 }
 
-[class*="square-section-"] {
-    height: 50vh;
-}
-
+/* [class*="square-section-"] {
+    height: 10vw;
+} */
+/* ------------Single SQUARE---------- */
 .container-square-img {
     width: 50%;
-    height: 50%;
+    height: calc(25vw / 2);
     position: relative;
-}
-
-.floated-square-img {
     float: left;
 }
-
+/* --------------------- */
 .square-img-fit {
     width: 50%;
     position: absolute;
